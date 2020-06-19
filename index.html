@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body><main class="container">
+	<div class="left">
+	<header class="logo">
+		<img src="images/logo.svg" alt="logo" class="logo">
+		<img src="images/hero-mobile.jpg" alt="" class="hero-mobile">
+
+	</header>
+	<div class="content1">
+		<h1 class="firstword">  <span class="secondword">WE'RE</span><br>Coming<br>soon</h1>
+	</div>
+	<div class="content2">
+		<p class="para">  Hello fellow shoppers! We're currently building our new<br> fashion store. 
+               Add your email below to stay up-to-date with<br> announcements and our launch deals.
+		</p>
+	</div>
+	<form>
+		<input type="text" class="email" id="email" placeholder="Email Address.." required="" >
+		<button class="arrow" onclick="">	<img src="images/icon-arrow.svg" alt="arrow"></button>
+			<img  class ="msg-invalid" src="images/icon-error.svg" alt="error" id="error" >	
+	
+
+	<div class="error" id="message" >
+		"Please enter a valid email"
+	</div>
+	</form>
+</div>
+	<div class="Image">
+		<img src="images/hero-desktop.jpg" alt="" class="hero-desktop">
+	</div>
+	 <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Mohammed Sameer</a>.
+      </p>
+  </footer>
+ 
+  </main>
+   <script>
+   	var myInput=document.getElementById("email");
+   	myInput.onfocus=function(){
+   		document.getElementById("message").style.display="block";
+   		document.getElementById("error").style.display="block";
+   	}
+    
+    myInput.onfocus=function(){
+    	document.getElementById("message").style.display="none";
+    	document.getElementById("error").style.display="none";
+    }  
+
+
+   
+    </script>
+</body>
+</html>
